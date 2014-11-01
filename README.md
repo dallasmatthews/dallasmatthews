@@ -23,4 +23,6 @@ __Make sure you test the new version on the dev before doing it on the productio
 - ssh into the production machine
 - `git pull github master` to pull in changes
 
-__Don't forget, DB changes are not reflected! This is not Laravel. __
+__Don't forget, DB changes are not reflected! This is not Laravel.__
+
+*More information here: http://efeqdev.com/website-development/this-is-how-we-version-control-and-deploy-our-wordpress-websites-with-git/*
