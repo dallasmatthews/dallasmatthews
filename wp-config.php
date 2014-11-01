@@ -14,43 +14,28 @@
  * @package WordPress
  */
 
-$config = [
-    'dev' => [
-        'URL' => 'dallasmatthews.dev',
-        'DB_NAME' => 'dallma_dev',
-        'DB_USER' => 'homestead',
-        'DB_PASSWORD' => 'secret',
-        'DB_HOST' => 'localhost',
-    ],
-    'prod' => [
-        'URL' => 'dallasmatthews.co.uk',
-        'DB_NAME' => 'xxxxxx',
-        'DB_USER' => 'xxxxxx',
-        'DB_PASSWORD' => 'xxxxxx',
-        'DB_HOST' => 'localhost',
-    ]
-];
-
-/** What's our environment? */
+/** Load the right settings for the environment */
 if ($_SERVER['SERVER_NAME'] == 'dallasmatthews.dev')
-    $config = $config['dev'];
-else $config = $config['prod'];
+    include('dev.settings.php');
+else include('production.settings.php'); //Returns an array called settings
+
+//die(var_dump($settings));
 
 /** Set up the WP constants */
-define('WP_SITEURL', 'http://' . $config['URL'] . '/wordpress');
-define('WP_CONTENT_URL', 'http://' . $config['URL'] . '/wp-content');
-define('WP_HOME', 'http://' . $config['URL']);
+define('WP_SITEURL', 'http://' . $settings['URL'] . '/wordpress');
+define('WP_CONTENT_URL', 'http://' . $settings['URL'] . '/wp-content');
+define('WP_HOME', 'http://' . $settings['URL']);
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', $config['DB_NAME']);
+define('DB_NAME', $settings['DB_NAME']);
 
 /** MySQL database username */
-define('DB_USER', $config['DB_USER']);
+define('DB_USER', $settings['DB_USER']);
 
 /** MySQL database password */
-define('DB_PASSWORD', $config['DB_PASSWORD']);
+define('DB_PASSWORD', $settings['DB_PASSWORD']);
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
