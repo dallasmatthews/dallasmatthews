@@ -1,0 +1,85 @@
+input.submit, input.submit:focus, input.submit:active {
+	background: #5C7AB9;
+}
+a { 
+	color: #5C7AB9;
+}
+#primary-menu .current {
+	background-color: #5C7AB9 !important;
+}
+.fixed #primary-menu .current {	background-color: #5C7AB9 !important; }
+#footer a:hover {
+	color: #5C7AB9;
+}
+.tweets a:hover , #footer .tweets a:hover, .tweets .tweet_time a:hover, #footer .tweets .tweet_time a:hover {
+	color: #5C7AB9;
+}
+.photostream a:hover, #footer .photostream a:hover {
+	background-color: #5C7AB9;
+	border: 1px solid #5C7AB9;
+}	
+.team-member-info .social-personal li a:hover {
+	background-color: #5C7AB9;
+}
+.skills-graph li span {
+	background-color: #5C7AB9;
+}
+.services div:hover, .services div:hover a {
+	background-color:#5C7AB9; 
+}
+.grey:hover { background-color:#5C7AB9; }
+.highlight1 {
+	background-color: #5C7AB9;
+}
+.item-info-overlay {
+	background-color: #5C7AB9;
+}
+.hexagon .item-info-overlay {
+    background-color: #5C7AB9;
+}
+.circle .item-info-overlay {
+    background-color: #5C7AB9;
+}
+.triangle .item-info-overlay {
+    background-color: #5C7AB9;
+}
+ul.item-nav li:hover {
+	background-color: #5C7AB9;
+}
+.contact-success {
+	background-color: #5C7AB9;
+}
+.form .contact-error {
+    color: #5C7AB9;
+}
+
+.flex-direction-nav li a:hover { background-color: #5C7AB9; }
+
+.widget a:hover {
+	color: #5C7AB9;
+}
+.widget ul#recentcomments a.author:hover {
+	color: #5C7AB9;
+}
+.post-title h2.title a:hover {
+	color: #5C7AB9;
+}
+.post-meta a:hover {
+	color: #5C7AB9;
+}
+.post-info div.date {
+	background-color: #5C7AB9;
+}
+.comment .author a:hover {
+	color: #5C7AB9;
+}
+.comment .comment-meta .reply:hover {
+	background-color:#5C7AB9; 
+}
+.wp-pagenavi span.current {
+	background-color: #5C7AB9;
+}
+.tagcloud a:hover {
+	background-color: #5C7AB9;
+}
+
