@@ -1,6 +1,7 @@
 # Project Specific #
 ###################
 *.settings.php
+wordpress
 
 # Compiled source #
 ###################
