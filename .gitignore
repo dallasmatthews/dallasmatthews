@@ -2,9 +2,8 @@
 ###################
 *.settings.php
 wordpress
-wp-content/upgrade/*
-wp-content/uploads/*
-wp-content/plugins/*
+wp-content/upgrade
+wp-content/plugins
 
 # Compiled source #
 ###################
