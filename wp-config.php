@@ -15,6 +15,8 @@
  */
 
 /** Load the right settings for the environment */
+define('WP_CACHE', true); //Added by WP-Cache Manager
+define( 'WPCACHEHOME', '/home/vagrant/Code/dallasmatthews/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 if ($_SERVER['SERVER_NAME'] == 'dallasmatthews.dev')
     include('dev.settings.php');
 else include('production.settings.php'); //Returns an array called settings
