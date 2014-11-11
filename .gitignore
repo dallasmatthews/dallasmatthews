@@ -4,6 +4,7 @@
 wordpress
 wp-content/upgrade
 wp-content/plugins
+wp-content/uploads
 
 # Compiled source #
 ###################
