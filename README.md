@@ -20,7 +20,8 @@ __Make sure you test the new version on the dev before doing it on the productio
 
 - Make your changes locally & commit them
 - `git push` pushes the default branch (master)
-- ssh into the production machine
+- ssh into the production machine ( {username}@shell.gridhost.co.uk )
+- cd into public_html
 - `git pull github master` to pull in changes
 
 __Don't forget, DB changes are not reflected! This is not Laravel.__
